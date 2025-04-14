@@ -16,9 +16,34 @@
     </header>
     <main>
         <p>Đây là thiết lập cơ bản của dự án do Tom thực hiện.</p>
+    
         <button id="actionButton" onclick="showMembers()">Nhấn vào tôi</button>
-
+    
+        <h2>Thêm ảnh và tên thành viên</h2>
+    
+        <div class="member-input">
+            <input type="file" accept="image/*" onchange="previewImage(event, 'img1')">
+            <input type="text" id="name1" placeholder="Nhập tên thành viên 1">
+            <img id="img1" class="preview-img" src="" alt="" />
+        </div>
+    
+        <div class="member-input">
+            <input type="file" accept="image/*" onchange="previewImage(event, 'img2')">
+            <input type="text" id="name2" placeholder="Nhập tên thành viên 2">
+            <img id="img2" class="preview-img" src="" alt="" />
+        </div>
+    
+        <div class="member-input">
+            <input type="file" accept="image/*" onchange="previewImage(event, 'img3')">
+            <input type="text" id="name3" placeholder="Nhập tên thành viên 3">
+            <img id="img3" class="preview-img" src="" alt="" />
+        </div>
+    
+        <button onclick="viewMembers()">Xem thành viên</button>
+    
+        <div id="memberDisplay" class="member-display"></div>
     </main>
+    
     <script src="script.js"></script>
 
     <section id="instructions">
